@@ -9,12 +9,17 @@ gradle clean build
 jar java -jar build/libs/challenge-0.0.1-SNAPSHOT.jar  
 
 ## How to Test:
-Easiest way is use POSTMAN or Browser or curl command  
+Easiest way is use POSTMAN or Browser or curl etc.
 1. POSTMAN  
-  > Authorization - User Type=Basic Auth, Username=batman, Password=batman and click on update request this will add a token in the header.  
+  > Authorization - User Type=Basic Auth, Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)
   > GET REQUEST, Enter the URL eg. http://localhost:9000/followers and press enter  
   > POST REQUEST, Enter the URL eg. http://localhost:9000/friends, In body put the request params eg. {"id" : 3} and press enter  
-  * All request should have authorization 
+  * All request should have authorization  
+  
+2. Browser
+  > Enter the URL http://localhost:9000/ , the browser will ask for username and password, enter Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)  
+  >  You can only test the GET Request after you have logged-in
+  
 
 
 
