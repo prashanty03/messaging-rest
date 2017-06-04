@@ -11,14 +11,14 @@ jar java -jar build/libs/challenge-0.0.1-SNAPSHOT.jar
 ## How to Test:
 Easiest way is use POSTMAN or Browser or curl etc.
 1. POSTMAN  
-  > Authorization - User Type=Basic Auth, Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)
-  > GET REQUEST, Enter the URL eg. http://localhost:9000/followers and press enter  
-  > POST REQUEST, Enter the URL eg. http://localhost:9000/friends, In body put the request params eg. {"id" : 3} and press enter  
+  > * Authorization - User Type=Basic Auth, Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)
+  > * GET REQUEST, Enter the URL eg. http://localhost:9000/followers and press enter  
+  > * POST REQUEST, Enter the URL eg. http://localhost:9000/friends, In body put the request params eg. {"id" : 3} and press enter  
   * All request should have authorization  
   
 2. Browser
-  > Enter the URL http://localhost:9000/ , the browser will ask for username and password, enter Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)  
-  >  You can only test the GET Request after you have logged-in
+  > * Enter the URL http://localhost:9000/ , the browser will ask for username and password, enter Username=batman, Password=batman and click on update request this will add a token in the header.(All the dummy username and password are present in the data.sql)  
+  > * You can only test the GET Request after you have logged-in
   
 
 
@@ -26,13 +26,13 @@ Easiest way is use POSTMAN or Browser or curl etc.
 # REST End points
 All the end points to work, user has to be authenticated using simple authentication. So make sure you enter username and password before accessing any of the URL
 
-> Get all the followers for currently logged-in user GET http://localhost:9000/followers  
-> Get all the people whom currently logged-in user is following GET http://localhost:9000/friends  
-> Get the timeline for the currently logged-in user  GET http://localhost:9000/timeline  
-> Filter the timeline for the currently logged-in user GET http://localhost:9000/timeline?search=keyword  
-> Find the List of all users with their most popular follower. GET http://localhost:9000/popularfollower  
-> Follow a user with id=3, POST body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
-> Unfollow a user with id=3, DELETE body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
-> Post a message, POST bosy= {"content" : "message"} http://localhost:9000/message [return a string message]  
+> * Get all the followers for currently logged-in user GET http://localhost:9000/followers  
+> * Get all the people whom currently logged-in user is following GET http://localhost:9000/friends  
+> * Get the timeline for the currently logged-in user  GET http://localhost:9000/timeline  
+> * Filter the timeline for the currently logged-in user GET http://localhost:9000/timeline?search=keyword  
+> * Find the List of all users with their most popular follower. GET http://localhost:9000/popularfollower  
+> * Follow a user with id=3, POST body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
+> * Unfollow a user with id=3, DELETE body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
+> * Post a message, POST bosy= {"content" : "message"} http://localhost:9000/message [return a string message]  
 
 
