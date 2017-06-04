@@ -31,7 +31,7 @@ All the end points to work, user has to be authenticated using simple authentica
 > * Find the List of all users with their most popular follower. GET http://localhost:9000/popularfollower  
 > * Follow a user with id=3, POST body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
 > * Unfollow a user with id=3, DELETE body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
-> * Post a message, POST bosy= {"content" : "message"} http://localhost:9000/message [return a string message]  
+> * Post a message, POST bosy= {"content" : "message"} http://localhost:9000/message [returns a string message]  
 
 
 
