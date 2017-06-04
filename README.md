@@ -1,7 +1,15 @@
 # messaging-rest  
-Spring Boot Security with H2 database, REST endpoints to post message, follow users, unfollow users, view timeline of messages, most popular follower  
+Spring Boot Security with H2 database, REST endpoints to post message, follow users, unfollow users, view timeline of messages, most popular follower 
 
-# END POINTS  
+How to Use and Tes:  
+Prereq : Java 1.7+ , Gradle 2+  
+git clone https://github.com/prashanty03/messaging-rest.git  
+cd messaging-rest  
+gradle clean build  
+jar java -jar build/libs/challenge-0.0.1-SNAPSHOT.jar  
+
+
+# REST End points
 All the end points to work, user has to be authenticated using simple authentication. So make sure you enter username and password before accessing any of the URL
 
 > Get all the followers for currently logged-in user GET http://localhost:9000/followers  
