@@ -1,12 +1,21 @@
 # messaging-rest  
 Spring Boot Security with H2 database, REST endpoints to post message, follow users, unfollow users, view timeline of messages, most popular follower 
 
-How to Use and Tes:  
-Prereq : Java 1.7+ , Gradle 2+  
+## How to Use:  
+Prereq : Java 1.7+ , Gradle 2+  
 git clone https://github.com/prashanty03/messaging-rest.git  
 cd messaging-rest  
 gradle clean build  
 jar java -jar build/libs/challenge-0.0.1-SNAPSHOT.jar  
+
+## How to Test:
+Easiest way is use POSTMAN or Browser or curl command  
+1. POSTMAN  
+  > Authorization - User Type=Basic Auth, Username=batman, Password=batman and click on update request this will add a token in the header.  
+  > GET REQUEST, Enter the URL eg. http://localhost:9000/followers and press enter  
+  > POST REQUEST, Enter the URL eg. http://localhost:9000/friends, In body put the request params eg. {"id" : 3} and press enter  
+  * All request should have authorization 
+
 
 
 # REST End points
