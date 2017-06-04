@@ -33,6 +33,12 @@ All the end points to work, user has to be authenticated using simple authentica
 > * Unfollow a user with id=3, DELETE body= {"id":3} http://localhost:9000/friends [returns the updated list of /friends]  
 > * Post a message, POST bosy= {"content" : "message"} http://localhost:9000/message [returns a string message]  
 
+** Assumptions:
+The timeline of messages are not ordered  
+I have used basic authentication, passwords are not encrypted but we can add modules to encrypt and save
+While the application bootstraps, I create the user table and authorities table for users
+
+
 
 
 
